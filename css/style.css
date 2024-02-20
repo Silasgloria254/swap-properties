@@ -39,3 +39,28 @@
   background: url("../../../images/banner-01.jpg");
   height: 100vh;
 }
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+body {
+  background: url(/images/pexels-sora-shimazaki-5935795\ \(3\).jpg) no-repeat center center/cover;
+  padding-top: 20%;
+  gap: 4px;
+}
+
+.contact__container {
+  margin-top: 50%;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}

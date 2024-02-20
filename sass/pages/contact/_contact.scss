@@ -1,2 +1,21 @@
 @use"../../utilities/mixin" as *;
-@use"../../utilities/variables" as *;
+@use"../../utilities/variable" as *;
+*{ margin: 0 auto;
+    padding: 0;
+box-sizing: border-box;
+width:80%;
+
+}
+body{  background: url(/images/pexels-sora-shimazaki-5935795\ \(3\).jpg) no-repeat center center /cover;
+padding-top: 20%;
+gap:4px;
+}
+
+
+.contact__container{margin-top: 50%
+    
+}
+  .social{
+@include flex(space-between,center);
+
+}
