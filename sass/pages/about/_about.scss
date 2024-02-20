@@ -1,0 +1,25 @@
+@use"../../utilities/mixin" as *;
+@use"../../utilities/variable" as *;
+
+
+body{
+     background: url(/images/pexels-fauxels-3183150.jpg) no-repeat center center/cover;
+    
+   
+  }
+  .about{
+    @include flex(center,center,column);
+    padding:10px;
+    color: rgb(7, 245, 7);
+    background-color: black;
+    
+}
+.partners{
+    @include flex(center,center);
+    gap:2em;
+    color: red;
+    background-color: black;
+}
+.why__us{
+    color: gold;
+}
