@@ -1,0 +1,7 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
+
+.hero {
+    background: url("../../../images/banner-01.jpg");
+    height: 100vh;
+}
