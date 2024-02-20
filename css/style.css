@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*mixin*/
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+}
+
+.nav__right ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  gap: 2em;
+}
+
+.nav__right ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  gap: 2em;
+}
+
+.hero {
+  background: url("../../../images/banner-01.jpg");
+  height: 100vh;
+}
