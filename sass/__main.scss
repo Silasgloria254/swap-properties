@@ -1,0 +1,10 @@
+@use "../sass/utilities/mixin" as *
+
+.nav{
+
+    @(center,center);
+    gap:4em;
+}
+.body{
+    background-color: aqua;
+}
