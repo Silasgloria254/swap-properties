@@ -1,21 +1,44 @@
 @use"../../utilities/mixin" as *;
 @use"../../utilities/variable" as *;
-*{ margin: 0 auto;
-    padding: 0;
-box-sizing: border-box;
-width:80%;
+
+.contact__container{
+  @include flex(center,center,);
+  gap:4em;
+  margin-top:40px;
+  border-top: 4px solid grey;
+  color:yellow;
+  background-color: darkcyan
+  
+  
+}
+
+
+.contact__right{
+  @include flex(space-between,center,column);
+  box-shadow: dimgray;
+border-radius:20%;
+background-color: grey;
+border-top: 4px solid grey;
+padding: 20px;
 
 }
-body{  background: url(/images/pexels-sora-shimazaki-5935795\ \(3\).jpg) no-repeat center center /cover;
-padding-top: 20%;
-gap:4px;
-}
-
-
-.contact__container{margin-top: 50%
-    
+.contact__left{
+  @include flex(center,center,column,space-between);
+  gap:1em;
 }
   .social{
 @include flex(space-between,center);
-
+background-color: black;
+margin-top: 80px;
+color: honeydew;
+height:100px;
 }
+.contact__left{
+  height:100%;
+  background-color: black;
+  padding:10px;
+  gap:4em;
+  }
+  .wide__range{
+    @include flex(center,center,column);
+  }

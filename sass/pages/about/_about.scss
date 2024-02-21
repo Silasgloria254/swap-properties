@@ -2,24 +2,29 @@
 @use"../../utilities/variable" as *;
 
 
-body{
-     background: url(/images/pexels-fauxels-3183150.jpg) no-repeat center center/cover;
+.container{background-color: black;
     
    
   }
   .about{
+    background: url(/images/pexels-fauxels-3183150.jpg) no-repeat center center/cover;
+
     @include flex(center,center,column);
-    padding:10px;
+    margin-top: -10px;
     color: rgb(7, 245, 7);
     background-color: black;
+    gap:4em;
+  }
     
-}
 .partners{
     @include flex(center,center);
     gap:2em;
-    color: red;
+    
     background-color: black;
 }
 .why__us{
-    color: gold;
+    color: white;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
+  
