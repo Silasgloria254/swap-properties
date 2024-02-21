@@ -1,0 +1,28 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
+
+.footer__section {
+    background-color: black;
+    color: white;
+    @include flex(space-evenly,center);
+    padding: 4em 2em;
+    margin-top: 50px;
+  }
+  .email button {
+    text-align: center;
+    background-color: #f35525;
+    padding: 2em 4em;
+    border: none;
+  }
+  .email {
+    background-color: whitesmoke;
+    border: none;
+  }
+  .email input{
+  
+    outline: none;
+  }
+  .type {
+    padding: 2em 2em;
+    border: none;
+  }
