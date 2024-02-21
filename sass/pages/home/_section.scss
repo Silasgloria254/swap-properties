@@ -1,0 +1,74 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
+
+.introduction{
+    @include flex(space-between,center);
+    margin-top: 2em;
+}
+.introduction h6 {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn-orange{
+    display: inline-block;
+    background-color: #f35525;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    border: none;
+}
+  .btn-orange a:hover {
+    color: #f35525;
+  }
+  
+  .btn-orange a:hover i {
+    color: #fff;
+  }
+  
+  .btn-black {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    border: none;
+    
+  }
+  
+  .btn-black a:hover {
+    background-color: #f35525;
+    color: #fff;
+  }
+  .section__three{
+    @include flex(space-evenly,center);
+    gap:2em;
+  }
+  .info__table{
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    width: 30%;
+    line-height: 3;
+    margin-top: 2em;
+}
+.info__table ul{
+    list-style-type: none;
+    gap: 2rem;
+}
+.section__three img{
+    align-items: center;
+
+}
+.section__three p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2;
+}
