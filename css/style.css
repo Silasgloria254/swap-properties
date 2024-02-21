@@ -52,7 +52,7 @@
 }
 
 .header {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .contact__left {
@@ -89,34 +89,24 @@
 }
 
 .container {
-  background-color: black;
-}
-
-.about {
-  background: url(/images/pexels-fauxels-3183150.jpg) no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  margin-top: -10px;
-  color: rgb(7, 245, 7);
-  background-color: black;
-  gap: 4em;
-}
-
-.partners {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
-  gap: 2em;
-  background-color: black;
 }
 
-.why__us {
-  color: white;
-  margin-top: 5em;
-  margin-bottom: 5em;
+.about {
+  margin-top: 20px;
+  text-align: center;
+  padding: 2em 4em;
+}
+
+.Why__us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
 }
