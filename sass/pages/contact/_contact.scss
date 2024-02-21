@@ -1,5 +1,5 @@
-@use"../../utilities/mixin" as *;
-@use"../../utilities/variable" as *;
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
 
 .contact__container{
   @include flex(center,center,column);
