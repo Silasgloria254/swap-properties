@@ -2,18 +2,28 @@
 @use"../../utilities/variable" as *;
 
 
-.container{background-color:white;
-  @include flex(center,center)
+.container{
+  background-color:white;
+  @include flex(center,center,column);
+  gap:4em;
+  
     
    
   }
   .about{
-    margin-top:20px;
-    text-align:center;
+    margin-top:0px;
     padding: 2em 4em;
+    text-align: center;
+    back
 
   }
-  .Why__us{
-    @include flex(center,center,column)
+  .why__us{
+    @include flex (center,center);
+    padding: 2em ;
+    gap:4em;
   }
+  .partners{
+    @include flex(center,center)
+  }
+  
   
