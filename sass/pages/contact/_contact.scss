@@ -2,43 +2,36 @@
 @use"../../utilities/variable" as *;
 
 .contact__container{
-  @include flex(center,center,);
-  gap:4em;
-  margin-top:40px;
-  border-top: 4px solid grey;
-  color:yellow;
-  background-color: darkcyan
-  
-  
-}
-
-
-.contact__right{
-  @include flex(space-between,center,column);
-  box-shadow: dimgray;
-border-radius:20%;
-background-color: grey;
-border-top: 4px solid grey;
-padding: 20px;
-
-}
-.contact__left{
-  @include flex(center,center,column,space-between);
-  gap:1em;
-}
-  .social{
-@include flex(space-between,center);
-background-color: black;
-margin-top: 80px;
-color: honeydew;
-height:100px;
-}
-.contact__left{
+  @include flex(center,center,column);
+  background:url("../images/contact-us.jpg")no-repeat center center/cover,fixed;
+  background-attachment:fixed;
   height:100%;
-  background-color: black;
-  padding:10px;
+  }
+.header{margin-top: 10%;
+
+}
+
+ .contact__left{
+  @include flex (center,center,column);
+padding:10%;
+ } 
+ .social{
+  @include flex(center,center);
+  margin-bottom: 20px;
   gap:4em;
+  background-color:white;
+  margin-bottom:10%;
+  padding: 20px;
+ }
+ .form{
+  input{
+    margin:2em;
+    padding:4em 4em;
   }
-  .wide__range{
-    @include flex(center,center,column);
+  .submit{
+    background-color: aqua;
+    border: none;
+    padding: 20px;
+    border-radius:20%;
   }
+ }
