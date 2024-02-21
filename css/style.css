@@ -1,4 +1,3 @@
-
 /*mixin*/
 * {
   margin: 0;
@@ -11,7 +10,6 @@
   width: 90%;
 }
 
-/*mixin*/
 .nav__content {
   display: flex;
   justify-content: space-between;
