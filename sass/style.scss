@@ -1,8 +1,11 @@
-
+@use "../sass/utilities/mixin";
+@use "../sass/utilities/mixin";
 @use "../sass/utilities/mixin";
 @use "./utilities/base";
 @use "./pages/home/nav";
 @use "./pages/home/hero";
+@use "./pages/contact/contact";
+@use"./pages/about/about";
 
 @use "./pages/home/footer";
 @use "./pages/home/section";
