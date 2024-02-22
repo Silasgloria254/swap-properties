@@ -1,9 +1,24 @@
 @use "../../utilities/mixin" as *;
 @use "../../utilities/variable" as *;
 
+
+nav{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
 .nav__content {
   @include flex(space-between, center);
+
+
+
 }
+
 .nav__right ul{
 list-style-type: none;
 @include flex(space-between,center);
@@ -15,3 +30,28 @@ gap:2em;
     display:block;
     gap:2em;
 }
+.nav__right ul li a:hover{
+  color: #f35525;
+  
+}
+.nav__right--1{
+display: none;
+}
+@media screen and (max-width:872px){
+  .nav__right ul li  {
+    font-size:1rem ;
+    display: none;
+  
+  }
+  .nav__right--1{
+    display: block;
+    margin-right: 2em;
+    }
+
+  .nav__content{
+    width: 100%;
+  }
+
+}
+  
+
