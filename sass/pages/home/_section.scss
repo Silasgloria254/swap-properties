@@ -72,3 +72,49 @@
     font-weight: 500;
     line-height: 2;
 }
+.content{
+  @include flex(center,center);
+  width: 30%;
+  height: 45vh;
+  background-color: #f35525;
+  border:6px solid lightgray;
+  border-radius:10%;
+   padding: 10px 20px;
+   align-items: center;
+   margin:0 auto;
+}
+@media screen and (max-width:872px){
+  .introduction h6{
+    font-size:2rem ;
+  }
+  .introduction h2{
+    font-size: 2rem;
+  }
+  .introduction{
+    @include flex(space-around,center,column);
+  }
+  .intoduction__right{
+@include flex(center,center);
+gap: 1em;
+
+  }
+  .section__three{
+@include flex(space-around,center,column);
+    width: 100%;
+    flex:1;
+    img{
+      width: 300px;
+    }
+  }
+  .info__table{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+  }
+
+  
+
+  
+}
+  
