@@ -148,6 +148,20 @@ img:nth-child(2){
             border: 3px solid red;
         }
       }
+      .item__laptop{
+        @include flex(center,center,row,wrap);
+        img{
+            width:100%;
+            border: 3px solid red;
+        }
+      }
+      .item__phone{
+        @include flex(center,center,row,wrap);
+        img{
+            width:100%;
+            border: 3px solid red;
+        }
+      }
     .footer__section{
       @include flex(space-around,center,column);
       gap: 2rem;
