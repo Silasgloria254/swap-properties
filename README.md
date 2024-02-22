@@ -5,7 +5,7 @@ ___
 ___
 
 swap__properties that helps one to exchange their properties under high supervision
-___
+___[Title](../../html_css/medic_care_clinic/README.md)
 ## live link ##
 To access the project live use this link
 
@@ -13,8 +13,8 @@ ___
 ## Screenshots ##
 ___
 This is a copy of the project
-![link](images/glo.png)
-![link](images/gloo.png)
+![link](images/collo.png)
+![link](images/sila.png)
 * html 
 * css
 ## project setting installation##
