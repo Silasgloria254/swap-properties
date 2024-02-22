@@ -46,7 +46,7 @@
   color: #fff;
 }
 
-.contact__container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +54,12 @@
   flex-wrap: no-wrap;
   background: url("../../../images/contact-us.jpg") no-repeat center center/cover, fixed;
   background-attachment: fixed;
-  height: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header {
-  margin-top: 20%;
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,36 +67,66 @@
   flex-wrap: no-wrap;
 }
 
-.contact__left {
+.contact__right {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: no-wrap;
-  padding: 10%;
+  margin-right: 70%;
 }
 
 .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: space-around;
   flex-wrap: no-wrap;
-  margin-bottom: 20px;
   gap: 4em;
-  margin-bottom: 10%;
   padding: 20px;
 }
 
-.form input {
-  margin: 2em;
-  padding: 4em 4em;
+.form {
+  margin-left: -70vw;
 }
-.form .submit {
+.form input {
+  margin: 2em 0;
+  padding: 2em;
+}
+
+.livechat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  gap: 4em;
+  margin-right: -50vw;
+  margin-top: -50vw;
+  color: greenyellow;
+}
+
+.submit {
   background-color: aqua;
   border: none;
-  padding: 20px;
+  padding: 1rem 2rem;
+  margin-left: 4rem;
   border-radius: 20%;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: space-around;
+  flex-wrap: no-wrap;
+  gap: 10rem;
+}
+.time height:fit-content .map-container {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+  border: 2px solid gray;
 }
 
 .footer__section {
