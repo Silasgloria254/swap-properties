@@ -1,30 +1,30 @@
-@use"../../utilities/mixin" as *;
-@use"../../utilities/variable" as *;
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
 
+.about__content {
+  @include flex(space-between, stretch);
+  gap:2em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  line-height: 2;
+  border: 6px solid lightgray;
+  margin-top: 7em;
+  
+  .about__content--1 {
+    flex: 1;
+    background: url("../../../images/about-pic.jpg") no-repeat center
+      center/cover;
+  }
+  .about__content--2 {
+    flex: 1;
+  }
+}
+@media screen and (max-width:872px){
+  .about__content{
+    @include flex(space-between, stretch,column);
 
-.container{
-  background-color:white;
-  @include flex(center,center,column);
-  gap:4em;
-  
-    
-   
   }
-  .about{
-    margin-top:0px;
-    padding: 2em 4em;
-    text-align: center;
-    
 
-  }
-  .why__us{
-    @include flex (center,center);
-    padding: 2em ;
-    gap:4em;
-  }
-  .partners{
-    @include flex(center,center)
-  }
-  
-  
-  
+}
+

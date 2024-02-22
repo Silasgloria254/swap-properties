@@ -19,10 +19,34 @@
     border: none;
   }
   .email input{
-  
-    outline: none;
-  }
-  .type {
     padding: 2em 2em;
     border: none;
+    outline: none;
+  }
+  
+    
+  
+  @media screen and (max-width:872px){
+    .footer__section{
+      @include flex(space-around,center,column);
+      gap: 2rem;
+    }
+    .email{
+      width: 100%;
+      margin: 0 auto;
+      @include flex(center,center);
+    }
+    .email input{
+      padding: 1rem 3rem;
+      font-size: 0.8rem;
+      width: 65%;
+    }
+    .email button{
+      padding: 1rem 2rem;
+      width: 35%;
+
+    }
+    
+    
+
   }
