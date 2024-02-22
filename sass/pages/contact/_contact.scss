@@ -12,7 +12,7 @@
 @include flex(center,center);
 box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 padding:2em;
-margin-left: -150px;
+margin-left: -200px;
 border-radius: 5%;
 
 }
@@ -27,7 +27,7 @@ border-radius:5%;
  } 
 
  .social{
-  @include flex(center,center, space-around);
+  @include flex(center,center,row,wrap);
   gap:4em;
   padding: 20px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
@@ -61,7 +61,7 @@ border-radius: 2%;
  }
 .time{
   margin-top: 2em;
-  @include flex(center,center,space-between);
+  @include flex(center,center,row,wrap);
   height:fit-content;
  
 gap:6em;
