@@ -10,7 +10,7 @@
   height: fit-content;
 }
 .header {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 30vh;
   @include flex(center, center);
   padding: 2em;
@@ -35,7 +35,7 @@
 
 .form {
   padding: 4em;
-  @include flex(center, center);
+  @include flex(center, center, row, wrap);
   gap: 3em;
 
   input, textarea {
@@ -89,6 +89,7 @@
     border-top: 2px solid gray;
     padding-top: 1em;
     gap: 1em;
+    text-align: center;
     &:last-child{
       @include flex(center, center);
 

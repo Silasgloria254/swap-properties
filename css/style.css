@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /*mixin*/
 * {
   margin: 0;
@@ -8,6 +9,10 @@
 .container {
   margin: 0 auto;
   width: 90%;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
 }
 
 nav {
@@ -95,7 +100,7 @@ nav {
 }
 
 .header {
-  margin-top: 10vh;
+  margin-top: 15vh;
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -136,7 +141,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 3em;
 }
 .form input, .form textarea {
@@ -195,6 +200,7 @@ nav {
   border-top: 2px solid gray;
   padding-top: 1em;
   gap: 1em;
+  text-align: center;
 }
 .contact__info div:last-child {
   display: flex;
