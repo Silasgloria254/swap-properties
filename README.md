@@ -8,7 +8,7 @@ swap__properties that helps one to exchange their properties under high supervis
 ___[Title](../../html_css/swap_properties/README.md)
 ## live link ##
 To access the project live use this link
-
+https://silasgloria254.github.io/swap-properties/
 ___
 ## Screenshots ##
 ___
@@ -19,18 +19,19 @@ This is a copy of the project
 * css
 ## project setting installation##
 1. Open the terminal and navigate the  code to where you want to store the project eg `cd Desktop`
-2. To clone the github project paste this on the terminal 
+2. To clone the github project paste this on the terminal `git clone https://github.com/Silasgloria254/swap-properties/tree/gloria`
 3. Use cd swap_properties to get into the project directory
 4. Open the project with your favorite browers
 ___
 ## contact ##
 if you would like to get more information,collaboration  and feedback use this address
 **silag9202@gmail.com**
+**lumwachiemmanuel18@gmail.com**
 ___
 ## license ##
 MIT License
 
-Copyright (c) [***2024***] [***sila***]
+Copyright (c) [***2024***] [***sila/manucho***]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
