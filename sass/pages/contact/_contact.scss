@@ -3,9 +3,7 @@
 
 .contact-container {
   @include flex(center, center, column);
-  background: url(/images/contact-us.jpg) no-repeat center
-      center/cover,
-    fixed;
+ 
   background-attachment: fixed;
   height: fit-content;
 }
@@ -15,7 +13,7 @@
   @include flex(center, center);
   padding: 2em;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../../../images/contact.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://silasgloria254.github.io/swap-properties/images/contact.jpg") no-repeat center center/cover;
   color: #fff
 }
 

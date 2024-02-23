@@ -71,7 +71,7 @@ nav {
   }
 }
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/banner-01.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://silasgloria254.github.io/swap-properties/images/banner-01.jpg");
   height: 100vh;
   text-align: center;
 }
@@ -94,7 +94,6 @@ nav {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: url(/images/contact-us.jpg) no-repeat center center/cover, fixed;
   background-attachment: fixed;
   height: -moz-fit-content;
   height: fit-content;
@@ -110,7 +109,7 @@ nav {
   flex-wrap: nowrap;
   padding: 2em;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/contact.jpg) no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://silasgloria254.github.io/swap-properties/images/contact.jpg") no-repeat center center/cover;
   color: #fff;
 }
 
@@ -465,7 +464,7 @@ nav {
 }
 
 .hero__properties {
-  background: url(/images/page-heading-bg.jpg);
+  background: url("https://silasgloria254.github.io/swap-properties/images/page-heading-bg.jpg");
   height: 50vh;
   display: flex;
   justify-content: center;
