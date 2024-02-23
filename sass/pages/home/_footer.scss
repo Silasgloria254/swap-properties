@@ -1,0 +1,69 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variable" as *;
+
+.footer__section {
+    background-color: black;
+    color: white;
+    @include flex(space-between,center);
+    padding: 4em 2em;
+    margin-top: 50px;
+    gap: 2em;
+
+    &>div{
+      flex: 1;
+    }
+
+    &--two{
+      img{
+        display: inline-block;
+        margin: 0 .5em;
+
+      }
+    }
+  }
+  .email button {
+    text-align: center;
+    background-color: #f35525;
+    padding: 2em 4em;
+    border: none;
+  }
+  .email {
+    background-color: whitesmoke;
+    border: none;
+    @include flex(space-between, center);
+    input{
+      flex: 1;
+    }
+  }
+  .email input{
+    padding: 2em 2em;
+    border: none;
+    outline: none;
+  }
+  
+    
+  
+  @media screen and (max-width:872px){
+    .footer__section{
+      @include flex(space-around,center,column);
+      gap: 2rem;
+    }
+    .email{
+      width: 100%;
+      margin: 0 auto;
+      @include flex(center,center);
+    }
+    .email input{
+      padding: 1rem 3rem;
+      font-size: 0.8rem;
+      width: 65%;
+    }
+    .email button{
+      padding: 1rem 2rem;
+      width: 35%;
+
+    }
+    
+    
+
+  }
