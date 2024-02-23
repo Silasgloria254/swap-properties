@@ -226,12 +226,20 @@ nav {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 4em 2em;
   margin-top: 50px;
+  gap: 2em;
+}
+.footer__section > div {
+  flex: 1;
+}
+.footer__section--two img {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 .email button {
@@ -244,6 +252,14 @@ nav {
 .email {
   background-color: whitesmoke;
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.email input {
+  flex: 1;
 }
 
 .email input {
