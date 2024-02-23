@@ -2,186 +2,182 @@
 @use "../../utilities/variable" as *;
 
 .nav__content {
-    @include flex(space-between, center);
-  }
-  .nav__right ul{
+  @include flex(space-between, center);
+}
+.nav__right ul {
   list-style-type: none;
-  @include flex(space-between,center);
-  gap:2em;
-  }
-  .nav__right ul li a{
-      text-decoration: none;
-      color: black;
-      display:block;
-      gap:2em;
-  }
+  @include flex(space-between, center);
+  gap: 2em;
+}
+.nav__right ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  gap: 2em;
+}
 
-.hero__properties{
-    background: url("../../../images/page-heading-bg.jpg");
-    height: 50vh;
-    @include flex(center,center);
+.hero__properties {
+  background: url("../../../images/page-heading-bg.jpg");
+  height: 50vh;
+  @include flex(center, center);
 }
-.btn-white{
-    // display: inline-block;
-    background-color: fff;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-    height: 50px;
-    line-height: 40px;
-    padding: 0px 30px;
-    border: none;
+.btn-white {
+  // display: inline-block;
+  background-color: fff;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 40px;
+  padding: 0px 30px;
+  border: none;
 }
-.desires{
-    @include flex(space-evenly,center);
-    margin-top: 2em;
-}
-.item__apartment{
-    @include flex(space-between,center, row, wrap);
-}
-.item__apartment--one{
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    padding: 35px 30px;
+.desires {
+  @include flex(space-evenly, center, row, wrap);
+  gap: 1em;
 
-    line-height: 3;
-    margin-top: 2em;
+  margin-top: 2em;
 }
-.item__apartment--one ul{
-    list-style-type: none;
-    gap:2em;
-    // @include flex(,center)
+.item__apartment {
+  @include flex(center, center, row, wrap);
+  gap: 1em;
 }
-.item__apartment__one--1{
-    @include flex(space-between,center);
+.item__apartment--one {
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+
+  line-height: 3;
+  margin-top: 2em;
 }
-.btn-plum{
-    display: inline-block;
-    background-color: plum;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 40px;
-    padding: 0px 30px;
-    border: none;
+.item__apartment--one ul {
+  list-style-type: none;
+  gap: 2em;
+  // @include flex(,center)
 }
-.pic-ctn{
-    position: relative;
-    height: 200px;
-    margin-top: 5vh;
+.item__apartment__one--1 {
+  @include flex(space-between, center);
 }
-.pic-ctn > img{
-    position: absolute;
-    top: 0;
-    // left: calc(50% - 100px);
+.btn-plum {
+  display: inline-block;
+  background-color: plum;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 30px;
+  border: none;
+}
+.pic-ctn {
+  position: relative;
+  height: 200px;
+  margin-top: 5vh;
+}
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  // left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+@keyframes display {
+  0% {
+    transform: translatex(200px);
     opacity: 0;
-    animation: display 10s infinite;
-}
-img:nth-child(2){
-    animation-delay:2s;
-}
-@keyframes display{
-    0%{
-        transform: translatex(200px);
-        opacity: 0;
-    }
-    10%{
-        transform: translatex(0);
-        opacity: 1;
-    }
+  }
+  10% {
+    transform: translatex(0);
+    opacity: 1;
+  }
 }
 
-.item__laptop--two{
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    padding: 35px 30px;
-    width: 30%;
-    line-height: 3;
-    margin-top: 2em;
+.item__laptop--two {
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  line-height: 3;
+  margin-top: 2em;
 }
-.item__laptop--two ul{
-    list-style-type: none;
-    gap:2em;
-    // @include flex(,center)
+.item__laptop--two ul {
+  list-style-type: none;
+  gap: 2em;
+  // @include flex(,center)
 }
-.item__laptop__two--1{
-    @include flex(space-between,center);
+.item__laptop__two--1 {
+  @include flex(space-between, center);
 }
-.item__phone--three{
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    padding: 35px 30px;
-    width: 30%;
-    line-height: 3;
-    margin-top: 2em;
+.item__phone--three {
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  line-height: 3;
+  margin-top: 2em;
 }
-.item__phone--three ul{
-    list-style-type: none;
-    gap:2em;
-    // @include flex(,center)
+.item__phone--three ul {
+  list-style-type: none;
+  gap: 2em;
+  // @include flex(,center)
 }
-.item__phone__three--1{
-    @include flex(space-between,center);
+.item__phone__three--1 {
+  @include flex(space-between, center);
 }
-@media screen and (max-width:872) {
-    .nav__right ul a{
-        font-size:1rem ;
-      }
-      .nav__content{
-        width: 100%;
-      } 
-    
-      .hero__properties{
-        width:100%;
-      }
-      .desires{
-        @include flex(space-between,center,column);
-        gap: 2em;
-        width: 100%;
+@media screen and (max-width: 872) {
+  .nav__right ul a {
+    font-size: 1rem;
+  }
+  .nav__content {
+    width: 100%;
+  }
 
-      }
-      .item__apartment{
-        @include flex(center,center,row,wrap);
-        img{
-            width:100%;
-            border: 3px solid red;
-        }
-      }
-      .item__laptop{
-        @include flex(center,center,row,wrap);
-        img{
-            width:100%;
-            border: 3px solid red;
-        }
-      }
-      .item__phone{
-        @include flex(center,center,row,wrap);
-        img{
-            width:100%;
-            border: 3px solid red;
-        }
-      }
-    .footer__section{
-      @include flex(space-around,center,column);
-      gap: 2rem;
-    }
-    .email{
+  .hero__properties {
+    width: 100%;
+  }
+  .desires {
+    @include flex(space-between, center, column);
+    gap: 2em;
+    width: 100%;
+  }
+  .item__apartment {
+    @include flex(center, center, row, wrap);
+    img {
       width: 100%;
-      margin: 0 auto;
-      @include flex(center,center);
+      border: 3px solid red;
     }
-    .email input{
-      padding: 1rem 3rem;
-      font-size: 0.8rem;
-      width: 65%;
+  }
+  .item__laptop {
+    @include flex(center, center, row, wrap);
+    img {
+      width: 100%;
+      border: 3px solid red;
     }
-    .email button{
-      padding: 1rem 2rem;
-      width: 35%;
-
+  }
+  .item__phone {
+    @include flex(center, center, row, wrap);
+    img {
+      width: 100%;
+      border: 3px solid red;
     }
-    
-    
-
+  }
+  .footer__section {
+    @include flex(space-around, center, column);
+    gap: 2rem;
+  }
+  .email {
+    width: 100%;
+    margin: 0 auto;
+    @include flex(center, center);
+  }
+  .email input {
+    padding: 1rem 3rem;
+    font-size: 0.8rem;
+    width: 65%;
+  }
+  .email button {
+    padding: 1rem 2rem;
+    width: 35%;
+  }
 }

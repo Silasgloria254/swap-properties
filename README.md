@@ -5,7 +5,7 @@ ___
 ___
 
 swap__properties that helps one to exchange their properties under high supervision
-___[Title](../../html_css/medic_care_clinic/README.md)
+___[Title](../../html_css/swap_properties/README.md)
 ## live link ##
 To access the project live use this link
 
@@ -19,8 +19,8 @@ This is a copy of the project
 * css
 ## project setting installation##
 1. Open the terminal and navigate the  code to where you want to store the project eg `cd Desktop`
-2. To clone the github project paste this on the terminal `git clone https://github.com/Silasgloria254/medical_care.git`
-3. Use cd medical-care to get into the project directory
+2. To clone the github project paste this on the terminal 
+3. Use cd swap_properties to get into the project directory
 4. Open the project with your favorite browers
 ___
 ## contact ##

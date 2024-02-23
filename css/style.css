@@ -82,7 +82,7 @@ nav {
     text-align: center;
   }
 }
-.container {
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,16 +95,17 @@ nav {
 }
 
 .header {
-  margin-top: 5px;
+  margin-top: 10vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   padding: 2em;
-  margin-left: -200px;
-  border-radius: 5%;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/contact.jpg) no-repeat center center/cover;
+  color: #fff;
 }
 
 .contact__right {
@@ -114,7 +115,6 @@ nav {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-right: 10%;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   padding: 80px;
   border-radius: 5%;
 }
@@ -131,40 +131,80 @@ nav {
 }
 
 .form {
-  margin-left: -10vw;
-  background-color: azure;
   padding: 4em;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-  border-radius: 2%;
-}
-.form input {
-  margin: 2em 0;
-  padding: 2em;
-}
-
-.submit {
-  background-color: aqua;
-  border: none;
-  padding: 1rem 2rem;
-  margin-left: 4rem;
-  border-radius: 20%;
-}
-
-.time {
-  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: -moz-fit-content;
-  height: fit-content;
+  flex-wrap: nowrap;
+  gap: 3em;
+}
+.form input, .form textarea {
+  margin: 0.5em 0;
+  padding: 1em 2em;
+  width: 100%;
+}
+
+.submit {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.time iframe {
+  margin-top: 2em;
+  width: 100%;
   gap: 6em;
 }
-.time .working__time {
+.time iframe .working__time {
   padding: 4em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
+}
+
+.contact__info p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+.contact__info p span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: orangered;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.contact__info p:not(:first-child) {
+  margin-top: 1em;
+}
+.contact__info div {
+  margin-top: 1em;
+  border-top: 2px solid gray;
+  padding-top: 1em;
+  gap: 1em;
+}
+.contact__info div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.contact__info div a {
+  color: orangered;
 }
 
 .map-container {
@@ -427,16 +467,18 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 1em;
   margin-top: 2em;
 }
 
 .item__apartment {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .item__apartment--one {
@@ -503,7 +545,6 @@ img:nth-child(2) {
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
-  width: 30%;
   line-height: 3;
   margin-top: 2em;
 }
@@ -525,7 +566,6 @@ img:nth-child(2) {
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
-  width: 30%;
   line-height: 3;
   margin-top: 2em;
 }
@@ -620,5 +660,36 @@ img:nth-child(2) {
   .email button {
     padding: 1rem 2rem;
     width: 35%;
+  }
+}
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+  line-height: 2;
+  border: 6px solid lightgray;
+  margin-top: 7em;
+}
+.about__content .about__content--1 {
+  flex: 1;
+  background: url("../../../images/about-pic.jpg") no-repeat center center/cover;
+}
+.about__content .about__content--2 {
+  flex: 1;
+}
+
+@media screen and (max-width: 872px) {
+  .about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
