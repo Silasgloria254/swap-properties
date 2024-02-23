@@ -3,7 +3,7 @@
 
 .contact-container {
   @include flex(center, center, column);
-  background: url("../../../images/contact-us.jpg") no-repeat center
+  background: url(../../../images/contact-us.jpg) no-repeat center
       center/cover,
     fixed;
   background-attachment: fixed;
