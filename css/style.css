@@ -1,6 +1,5 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 /*mixin*/
-
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +8,13 @@
 
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
 
-/*mixin*/
 nav {
   width: 100%;
   background-color: #fff;
@@ -23,17 +24,12 @@ nav {
   right: 0;
 }
 
-
 .nav__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
 }
 
 .nav__right ul {
@@ -42,10 +38,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
   flex-wrap: nowrap;
-
   gap: 2em;
 }
 
@@ -55,7 +48,6 @@ nav {
   display: block;
   gap: 2em;
 }
-
 
 .nav__right ul li a:hover {
   color: #f35525;
@@ -78,10 +70,10 @@ nav {
     width: 100%;
   }
 }
-
 .hero {
-  background: url("../../../images/banner-01.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://silasgloria254.github.io/swap-properties/images/banner-01.jpg");
   height: 100vh;
+  text-align: center;
 }
 
 .hero h1 {
@@ -90,68 +82,46 @@ nav {
   color: #fff;
 }
 
-
-.container {
 @media screen and (max-width: 872px) {
   .hero h1 {
     font-size: 2rem;
     text-align: center;
   }
 }
-.contact__container {
+.contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  flex-wrap: no-wrap;
-  background: url("../../../images/contact-us.jpg") no-repeat center center/cover, fixed;
+  flex-wrap: nowrap;
   background-attachment: fixed;
   height: -moz-fit-content;
   height: fit-content;
 }
 
 .header {
-  margin-top: 5px;
+  margin-top: 15vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: no-wrap;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+  flex-wrap: nowrap;
   padding: 2em;
-  margin-left: -200px;
-  border-radius: 5%;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://silasgloria254.github.io/swap-properties/images/contact.jpg") no-repeat center center/cover;
+  color: #fff;
 }
 
 .contact__right {
-
-  flex-wrap: nowrap;
-  background: url("../images/contact-us.jpg") no-repeat center center/cover, fixed;
-  background-attachment: fixed;
-  height: 100%;
-}
-
-.header {
-  margin-top: 20%;
-}
-
-.contact__left {
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   margin-right: 10%;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
   padding: 80px;
   border-radius: 5%;
-
-  flex-wrap: nowrap;
-  padding: 10%;
-
 }
 
 .social {
@@ -159,7 +129,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
   flex-wrap: wrap;
   gap: 4em;
   padding: 20px;
@@ -167,40 +136,81 @@ nav {
 }
 
 .form {
-  margin-left: -10vw;
-  background-color: azure;
   padding: 4em;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
-  border-radius: 2%;
-}
-.form input {
-  margin: 2em 0;
-  padding: 2em;
-}
-
-.submit {
-  background-color: aqua;
-  border: none;
-  padding: 1rem 2rem;
-  margin-left: 4rem;
-  border-radius: 20%;
-}
-
-.time {
-  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  height: -moz-fit-content;
-  height: fit-content;
+  gap: 3em;
+}
+.form input, .form textarea {
+  margin: 0.5em 0;
+  padding: 1em 2em;
+  width: 100%;
+}
+
+.submit {
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  padding: 1em 2em;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.time iframe {
+  margin-top: 2em;
+  width: 100%;
   gap: 6em;
 }
-.time .working__time {
+.time iframe .working__time {
   padding: 4em;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
+}
+
+.contact__info p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+.contact__info p span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: orangered;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.contact__info p:not(:first-child) {
+  margin-top: 1em;
+}
+.contact__info div {
+  margin-top: 1em;
+  border-top: 2px solid gray;
+  padding-top: 1em;
+  gap: 1em;
+  text-align: center;
+}
+.contact__info div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.contact__info div a {
+  color: orangered;
 }
 
 .map-container {
@@ -211,74 +221,24 @@ nav {
   margin-right: -70px;
 }
 
-.container {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  gap: 4em;
-}
-
-.about {
-  margin-top: 0px;
-  padding: 2em 4em;
-  text-align: center;
-}
-
-.why__us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  padding: 2em;
-  gap: 4em;
-}
-
-.partners {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-}
-
-  flex-wrap: nowrap;
-  margin-bottom: 20px;
-  gap: 4em;
-  background-color: white;
-  margin-bottom: 10%;
-  padding: 20px;
-}
-
-.form input {
-  margin: 2em;
-  padding: 4em 4em;
-}
-.form .submit {
-  background-color: aqua;
-  border: none;
-  padding: 20px;
-  border-radius: 20%;
-}
-
-
 .footer__section {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
   padding: 4em 2em;
   margin-top: 50px;
+  gap: 2em;
+}
+.footer__section > div {
+  flex: 1;
+}
+.footer__section--two img {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 .email button {
@@ -291,19 +251,17 @@ nav {
 .email {
   background-color: whitesmoke;
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.email input {
+  flex: 1;
 }
 
 .email input {
-
-  outline: none;
-}
-
-.type {
-  padding: 2em 2em;
-  border: none;
-}
-
-
   padding: 2em 2em;
   border: none;
   outline: none;
@@ -337,17 +295,12 @@ nav {
     width: 35%;
   }
 }
-
 .introduction {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
   margin-top: 2em;
 }
 
@@ -400,11 +353,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
   gap: 2em;
 }
 
@@ -489,17 +438,12 @@ nav {
     width: 100%;
   }
 }
-
 .nav__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
 }
 
 .nav__right ul {
@@ -508,11 +452,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
   gap: 2em;
 }
 
@@ -524,17 +464,13 @@ nav {
 }
 
 .hero__properties {
-  background: url("../../../images/page-heading-bg.jpg");
+  background: url("https://silasgloria254.github.io/swap-properties/images/page-heading-bg.jpg");
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
 }
 
 .btn-white {
@@ -553,32 +489,24 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 1em;
   margin-top: 2em;
 }
 
 .item__apartment {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: wrap;
-
+  gap: 1em;
 }
 
 .item__apartment--one {
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
-
-  width: 30%;
-
   line-height: 3;
   margin-top: 2em;
 }
@@ -593,11 +521,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
 }
 
 .btn-plum {
@@ -614,12 +538,7 @@ nav {
 
 .pic-ctn {
   position: relative;
-
-  width: 100vw;
-  height: 300px;
-
   height: 200px;
-
   margin-top: 5vh;
 }
 
@@ -648,7 +567,6 @@ img:nth-child(2) {
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
-  width: 30%;
   line-height: 3;
   margin-top: 2em;
 }
@@ -663,18 +581,13 @@ img:nth-child(2) {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
-
 }
 
 .item__phone--three {
   border-radius: 6px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
-  width: 30%;
   line-height: 3;
   margin-top: 2em;
 }
@@ -689,9 +602,6 @@ img:nth-child(2) {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-
-  flex-wrap: no-wrap;
-
   flex-wrap: nowrap;
 }
 
@@ -722,6 +632,28 @@ img:nth-child(2) {
     flex-wrap: wrap;
   }
   .item__apartment img {
+    width: 100%;
+    border: 3px solid red;
+  }
+  .item__laptop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .item__laptop img {
+    width: 100%;
+    border: 3px solid red;
+  }
+  .item__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .item__phone img {
     width: 100%;
     border: 3px solid red;
   }
@@ -768,7 +700,7 @@ img:nth-child(2) {
 }
 .about__content .about__content--1 {
   flex: 1;
-  background: url("../../../images/about-pic.jpg") no-repeat center center/cover;
+  background: url(/images/about-pic.jpg) no-repeat center center/cover;
 }
 .about__content .about__content--2 {
   flex: 1;

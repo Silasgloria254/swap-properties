@@ -4,9 +4,22 @@
 .footer__section {
     background-color: black;
     color: white;
-    @include flex(space-evenly,center);
+    @include flex(space-between,center);
     padding: 4em 2em;
     margin-top: 50px;
+    gap: 2em;
+
+    &>div{
+      flex: 1;
+    }
+
+    &--two{
+      img{
+        display: inline-block;
+        margin: 0 .5em;
+
+      }
+    }
   }
   .email button {
     text-align: center;
@@ -17,6 +30,10 @@
   .email {
     background-color: whitesmoke;
     border: none;
+    @include flex(space-between, center);
+    input{
+      flex: 1;
+    }
   }
   .email input{
     padding: 2em 2em;
