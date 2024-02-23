@@ -71,7 +71,7 @@ nav {
   }
 }
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/banner-01.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/banner-01.jpg);
   height: 100vh;
   text-align: center;
 }
@@ -94,7 +94,7 @@ nav {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  background: url(../../../images/contact-us.jpg) no-repeat center center/cover, fixed;
+  background: url(/images/contact-us.jpg) no-repeat center center/cover, fixed;
   background-attachment: fixed;
   height: -moz-fit-content;
   height: fit-content;
@@ -465,7 +465,7 @@ nav {
 }
 
 .hero__properties {
-  background: url(../../../images/page-heading-bg.jpg);
+  background: url(/images/page-heading-bg.jpg);
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -701,7 +701,7 @@ img:nth-child(2) {
 }
 .about__content .about__content--1 {
   flex: 1;
-  background: url(../../../images/about-pic.jpg) no-repeat center center/cover;
+  background: url(/images/about-pic.jpg) no-repeat center center/cover;
 }
 .about__content .about__content--2 {
   flex: 1;
