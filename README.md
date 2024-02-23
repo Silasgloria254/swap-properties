@@ -19,7 +19,7 @@ This is a copy of the project
 * css
 ## project setting installation##
 1. Open the terminal and navigate the  code to where you want to store the project eg `cd Desktop`
-2. To clone the github project paste this on the terminal `git clone https://github.com/Silasgloria254/swap-properties/tree/gloria`
+2. To clone the github project paste this on the terminal `git clone https://github.com/Silasgloria254/swap-properties/`
 3. Use cd swap_properties to get into the project directory
 4. Open the project with your favorite browers
 ___
