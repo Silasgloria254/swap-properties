@@ -2,8 +2,9 @@
 @use "../../utilities/variable" as *;
 
 .hero {
-    background: url("../../../images/banner-01.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../../../images/banner-01.jpg");
     height: 100vh;
+    text-align: center;
 
 }
 
